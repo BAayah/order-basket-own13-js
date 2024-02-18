@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.menu-block,
+.orders-block {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    /* border: 2px solid red; */
+}
+
+.menu-block {
+    background: #f0e3ff;
+}
+
+.orders-block {
+    /* background: #d89cf6; */
+    background: #bab4ae;
+}
+
+.food-card {
+    display: flex;
+    width: 200px;
+    border: 1px solid;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    /* background-color: #70559b; */
+    background-color: #800080;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 30px rgb(0 0 0/ 40%);
+}
+
+.food-img {
+    width: 90px;
+    background-size: cover;
+    height: 90px;
+    border-radius: 7px;
+}
+
+#menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding: 0 0px;
+    /* border: 2px solid blue; */
+}
+
+.food-card:hover {
+    box-shadow: 0 10px 30px rgb(0 0 0/ 40%);
+    transition: .5s ease-in-out;
+}
+
+.order-item {
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+    margin-top: 10px;
+    /* background-color: #f0e3ff; */
+    background-color: rgb(98, 92, 84);
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: aliceblue;
+    border: 2px solid gold;
+}
+
+#orders-list {
+    width: 100%;
+    /* border: 2px solid red; */
+}
+
+#del {
+    cursor: pointer;
+}
+
+.a-12 {
+    width: 70px;
+    border: 2px solid gold;
+    border-radius: 8px;
+    height: 23px;
+    background-color: rgb(138, 128, 108);
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+
+.out {
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 3px;
+    color: rgb(255, 196, 0);
+}
+
+img {
+    border: 2px solid green;
+    border-radius: 10px;
+    width: 35px;
+    height: 35px;
+}
+
+img:hover {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+.btn-img {
+    width: 39px;
+    height: 40px;
+    background-image: url(96delete.png);
+    background-size: cover;
+    border-radius: 8px;
+    border: none;
+}
+.btn-img:hover {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+.btno {
+    border: 1px solid gold;
+    width: 35px;
+    height: 25px;
+    border-radius: 7px;
+    background-color: rgb(146, 131, 51);
+    color: white;
+    font-size: 17px;
+}
+.btno:hover {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+::placeholder {
+    color: white;
+}
+label {
+    margin: 20px;    
+    width: 118px;
+    display: flex;
+    justify-content: space-between;
+}
